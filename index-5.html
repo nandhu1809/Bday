@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A birthday message made with care.">
+<title>For Neelima — Happy Birthday ♡</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:#241b22;background:#fff8fb;font-family:Georgia,"Times New Roman",serif;line-height:1.7}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px 22px;background:radial-gradient(circle at top,#ffe7f0 0,#fff8fb 55%,#f8edf5 100%);position:relative;overflow:hidden}
+.hero:before,.hero:after{content:"♡";position:absolute;font-size:180px;opacity:.08}
+.hero:before{left:-35px;top:8%}.hero:after{right:-25px;bottom:8%}
+.card{max-width:760px;position:relative;z-index:1}
+.small{letter-spacing:4px;text-transform:uppercase;font-size:12px;color:#9b647d}
+h1{font-size:clamp(48px,12vw,100px);line-height:1;margin:18px 0}
+h2{font-size:clamp(30px,7vw,52px);line-height:1.15}
+.subtitle{font-size:20px;max-width:620px;margin:0 auto 28px;color:#624c58}
+button{border:0;border-radius:999px;padding:14px 25px;background:#2f2029;color:white;font-size:15px;cursor:pointer;box-shadow:0 8px 24px #2f202933}
+section{padding:80px 22px}.wrap{max-width:800px;margin:auto}.center{text-align:center}
+.message{background:white;border-radius:28px;padding:35px;box-shadow:0 12px 45px #6d385d18}
+.message p{font-size:18px}.divider{text-align:center;color:#b77b96;font-size:24px;margin:28px 0}
+.note{background:#fff0f5;border-left:4px solid #bd7694;padding:20px 24px;border-radius:0 18px 18px 0}
+footer{text-align:center;padding:50px 20px 70px;color:#806775}
+.reveal{opacity:0;transform:translateY(20px);transition:.8s}.reveal.show{opacity:1;transform:none}
+.heart{font-size:45px;animation:float 2.5s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-8px)}}
+@media(max-width:600px){.message{padding:25px}.message p{font-size:17px}}
+</style>
+</head>
+<body>
+<header class="hero">
+<div class="card">
+<div class="heart">♡</div>
+<div class="small">A little birthday page, made just for you</div>
+<h1>Happy Birthday</h1>
+<p class="subtitle"><strong>Neelima</strong>, I hope this birthday brings you happiness, peace, success, good health, and countless reasons to smile.</p>
+<button onclick="document.getElementById('letter').scrollIntoView()">Open my message ↓</button>
+</div>
+</header>
+
+<main>
+<section id="letter">
+<div class="wrap reveal">
+<div class="small center">A birthday wish</div>
+<h2 class="center">For someone who will always matter to me.</h2>
+<div class="message">
+<p>Happy Birthday, <strong>Neelima</strong>. 🎂♡</p>
+
+<p>I hope this birthday brings you happiness, peace, success, good health, and many reasons to smile.</p>
+
+<p>I know we're not talking right now, and I completely respect your space. I didn't make this page expecting a reply or anything from you. I simply wanted to wish you because, to me, you have always been someone very special.</p>
+
+<div class="divider">♡</div>
+
+<p>Our friendship and the memories we've shared will always have a special place in my heart. Some people become an important part of our journey without even realizing how much they mean to us — you're one of those people for me.</p>
+
+<p>I don't want to make your birthday message complicated or heavy. I just wanted you to know that <strong>you matter, you are remembered, and you are sincerely wished the very best.</strong></p>
+
+<div class="note">Simply enjoy your day, cherish every moment, and step into a beautiful and grateful future. ♡</div>
+
+<p style="margin-top:30px">May this new year of your life bring you beautiful moments, wonderful people, and everything you've been hoping for.</p>
+
+<p><strong>Happy Birthday once again, Neelima. 🎂✨<br>Stay happy, keep smiling, and take care.</strong></p>
+
+<p style="text-align:right;margin-top:35px">— <strong>Stanger</strong></p>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap center reveal">
+<div class="small">One last thing</div>
+<h2>May life be kind to you.</h2>
+<p style="font-size:18px;color:#624c58">Once again, a very Happy Birthday, Neelima. ♡ Have your day, enjoy every moment, and may you achieve every dream you carry in your heart. I hope your wonderful life is filled with beautiful moments, meaningful memories, and success in everything you choose to pursue.</p>
+<div class="heart">♡</div>
+</div>
+</section>
+</main>
+
+<footer>Made with sincerity, for a birthday that deserves to be remembered.</footer>
+
+<script>
+const items=document.querySelectorAll('.reveal');
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')});
+},{threshold:.12});
+items.forEach(i=>observer.observe(i));
+</script>
+</body>
+</html>
